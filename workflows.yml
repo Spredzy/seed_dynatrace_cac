@@ -1,0 +1,16 @@
+---
+controller_workflows:
+  - name: Dynatrace / Set up AAP in Dynatrace
+    description: End to end configuration of AAP in Dynatrace
+    organization: Default
+    simplified_workflow_nodes:
+      - identifier: "Register AAP"
+        unified_job_template: Dynatrace / Register
+        success_nodes:
+          - "Configure AAP"
+      - identifier: "Configure AAP"
+        unified_job_template: Dynatrace / Configure AAP
+        success_nodes:
+          - "Enable AAP"
+      - identifier: "Enable AAP"
+        unified_job_template: Dynatrace / Enable AAPE

@@ -1,0 +1,29 @@
+---
+controller_templates:
+ - name: Dynatrace / Register
+   execution_environment: seed_ee
+   instance_groups:
+     - default
+   inventory: Demo Inventory
+   project: Dynatrace Official Playbooks
+   playbook: hello_dynatrace.yml
+   job_tags: Dynatrace
+   labels: Dynatrace
+ - name: Dynatrace / Configure AAP
+   execution_environment: seed_ee
+   instance_groups:
+     - default
+   inventory: Demo Inventory
+   project: Dynatrace Official Playbooks
+   playbook: hello_dynatrace.yml
+   job_tags: Dynatrace
+   labels: Dynatrace
+ - name: Dynatrace / Enable AAP
+   execution_environment: seed_ee
+   instance_groups:
+     - default
+   inventory: Demo Inventory
+   project: Dynatrace Official Playbooks
+   playbook: hello_dynatrace.yml
+   job_tags: Dynatrace
+   labels: Dynatrace
