@@ -13,4 +13,4 @@ controller_workflows:
         success_nodes:
           - "Enable AAP"
       - identifier: "Enable AAP"
-        unified_job_template: Dynatrace / Enable AAPE
+        unified_job_template: Dynatrace / Enable AAP
